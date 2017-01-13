@@ -1,7 +1,7 @@
 {
   "name": "castas",
   "main": "castas",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "methods to return values of changed type, mostly for parsing stringy command-line and url-encoded values to usable javascript equivalents.",
   "author": "Chris <chris@bumblehead.com>",
   "license" : "MIT",
