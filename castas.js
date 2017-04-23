@@ -1,5 +1,5 @@
 // Filename: castas.js  
-// Timestamp: 2017.01.13-00:27:11 (last modified)
+// Timestamp: 2017.04.23-14:09:16 (last modified)
 // Author(s): bumblehead <chris@bumblehead.com>
 
 const castas = module.exports = (o => {
@@ -8,7 +8,7 @@ const castas = module.exports = (o => {
     if (String(val) === 'true')
       defval = true;
     else if (String(val) === 'false')
-      defval = false;    
+      defval = false;
 
     return Boolean(defval);    
   };
