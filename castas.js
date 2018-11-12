@@ -2,8 +2,7 @@
 // Timestamp: 2017.04.23-14:09:16 (last modified)
 // Author(s): bumblehead <chris@bumblehead.com>
 
-const castas = module.exports = (o => {
-
+module.exports = (o => {
   o.bool = (val, defval) => {
     if (String(val) === 'true')
       defval = true;
@@ -33,9 +32,9 @@ const castas = module.exports = (o => {
 
   o.str = (val, defval) => {
     if (/string|number|boolean/.test(typeof val))
-      defval = val;
+      defval = String(val);
     
-    return String(defval);
+    return defval;
   };
 
   o.ts = (val, defval) => {

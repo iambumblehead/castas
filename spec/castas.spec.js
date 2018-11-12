@@ -62,18 +62,17 @@ describe("castas.str", () => {
     expect(castas.str('', '5')).toBe('');
   });  
   it('should return `"1"` from `null, 1`', () => {
-    expect(castas.str(null, 1)).toBe('1');
+    expect(castas.str(null, undefined)).toBe(undefined);
   });  
 });
 
 describe("castas.tstr", () => {
   it('should return `"1"` from `"", 1`', () => {
-    expect(castas.tstr('', 1)).toBe('1');
+    expect(castas.tstr('', undefined)).toBe(undefined);
   });
 });
 
 describe("castas.ts", () => {
-
   it("should return `1470076935364` from `'2016-08-01T18:42:15.364Z'`", () => {
     expect(castas.ts('2016-08-01T18:42:15.364Z')).toBe(1470076935364);
   });

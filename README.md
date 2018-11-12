@@ -1,6 +1,6 @@
 castas
 ======
-**(c)[Bumblehead][0] 2016**
+**(c)[Bumblehead][0]**
 
 methods to return values of changed type, mostly for parsing stringy command-line and url-encoded values to usable javascript equivalents.
 
@@ -34,7 +34,7 @@ castas.str('', '5');   // ''
 
 (The MIT License)
 
-Copyright (c) 2016 [Bumblehead][0] <chris@bumblehead.com>
+Copyright (c) [Bumblehead][0] <chris@bumblehead.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
