@@ -1,13 +1,14 @@
 {
   "name": "castas",
   "main": "castas",
-  "version": "0.0.4",
-  "description": "methods to return values of changed type, mostly for parsing stringy command-line and url-encoded values to usable javascript equivalents.",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "return values of changed type, mostly for parsing stringy command-line and url-encoded values to primitive equivalents.",
   "author": "Chris <chris@bumblehead.com>",
   "license": "MIT",
   "readmeFilename": "README.md",
   "scripts": {
-    "test": "jasmine"
+    "test": "ava"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,6 @@
     "cast"
   ],
   "devDependencies": {
-    "jasmine": "^3.3.0",
-    "jasmine-spec-reporter": "^4.2.1"
+    "ava": "^3.6.0"
   }
 }

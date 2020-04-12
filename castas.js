@@ -2,7 +2,8 @@
 // Timestamp: 2017.04.23-14:09:16 (last modified)
 // Author(s): bumblehead <chris@bumblehead.com>
 
-module.exports = (o => {
+// module.exports = (o => {
+export default (o => {
   o.bool = (val, defval) => {
     if (String(val) === 'true')
       defval = true;
@@ -24,7 +25,7 @@ module.exports = (o => {
   o.num = (val, defval) => {
     if (typeof val === 'number')
       defval = val;
-    else if (!isNaN(parseFloat(val)) && isFinite(val))
+    else if (!Number.isNaN(Number.parseFloat(val)) && Number.isFinite(val))
       defval = +val;
 
     return defval;
@@ -38,7 +39,7 @@ module.exports = (o => {
   };
 
   o.ts = (val, defval) => {
-    if (!isNaN(parseFloat(val)) && isFinite(val)) val = +val;
+    if (!Number.isNaN(Number.parseFloat(val)) && Number.isFinite(+val)) val = +val;
     if (val instanceof Date || (
         /string|number/.test(typeof val)))
       defval = (new Date(val)).getTime();
