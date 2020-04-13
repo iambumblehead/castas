@@ -2,7 +2,7 @@
   "name": "castas",
   "main": "castas.js",
   "type": "module",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "return values of changed type, mostly for parsing stringy command-line and url-encoded values to primitive equivalents.",
   "author": "Chris <chris@bumblehead.com>",
   "license": "MIT",

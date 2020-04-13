@@ -25,7 +25,7 @@ export default (o => {
   o.num = (val, defval) => {
     if (typeof val === 'number')
       defval = val;
-    else if (!Number.isNaN(Number.parseFloat(val)) && Number.isFinite(val))
+    else if (!Number.isNaN(Number.parseFloat(val)) && Number.isFinite(+val))
       defval = +val;
 
     return defval;
