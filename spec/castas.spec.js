@@ -2,9 +2,8 @@
 // Timestamp: 2017.04.23-14:12:40 (last modified)
 // Author(s): bumblehead <chris@bumblehead.com>
 
-// const castas = require('../');
-import castas from '../castas.js';
-import test from 'ava';
+const test = require('ava');
+const castas = require('..').default;
 
 test('castas.bool should return `true` from `"true"`', t => {
   t.is(castas.bool('true'), true);
