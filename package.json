@@ -14,7 +14,7 @@
       "import": "./castas.mjs"
     },
     "./": "./"
-  },    
+  },
   "scripts": {
     "test": "ava castas.spec.mjs",
     "start": "cp castas.mjs castas.js && sed -i 's/export default/module.exports =/' castas.js",
