@@ -5,18 +5,21 @@ castas
 methods to return values of changed type, mostly for parsing stringy command-line and url-encoded values to usable javascript equivalents.
 
 ```javascript
-castas.bool('false');                  // false
-castas.bool(true);                     // true
-castas.bool(null, false);              // false
-castas.bool(null, true);               // true
-castas.ts('1470076935364');            // 1470076935364
-castas.ts('2016-08-01T18:42:15.364Z'); // 1470076935364
-castas.ts(new Date(1470076935364));    // 1470076935364
-castas.arr("one,two,three");           // ['one','two','three']
-castas.arr(["one","two","three"]);     // ['one','two','three']
-castas.str('', '5');                   // '' 
-castas.str(null, 5);                   // '5' 
-castas.str(false);                     // 'false' 
+castas.bool('false');                    // false
+castas.bool(true);                       // true
+castas.bool(null, false);                // false
+castas.bool(null, true);                 // true
+castas.ts('1470076935364');              // 1470076935364
+castas.ts('2016-08-01T18:42:15.364Z');   // 1470076935364
+castas.ts(new Date(1470076935364));      // 1470076935364
+castas.date('1470076935364');            // 2016-08-01T18:42:15.364Z
+castas.date('2016-08-01T18:42:15.364Z'); // 2016-08-01T18:42:15.364Z
+castas.date(new Date(1470076935364));    // 2016-08-01T18:42:15.364Z
+castas.arr("one,two,three");             // ['one','two','three']
+castas.arr(["one","two","three"]);       // ['one','two','three']
+castas.str('', '5');                     // '' 
+castas.str(null, 5);                     // '5' 
+castas.str(false);                       // 'false' 
 ```
 
 a secondary set of functions prefixed with 't' ignores a non-truthy first param
@@ -28,9 +31,8 @@ castas.str('', '5');   // ''
 
 
 [0]: http://www.bumblehead.com                            "bumblehead"
-[7]: https://raw.githubusercontent.com/iambumblehead/es5classic/master/es5classic_120x120.png
 
-![scrounge](https://github.com/iambumblehead/scroungejs/raw/master/img/hand.png)[![es5 classic][7]][7] 
+![scrounge](https://github.com/iambumblehead/scroungejs/raw/master/img/hand.png)
 
 (The MIT License)
 
