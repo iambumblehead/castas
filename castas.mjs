@@ -47,6 +47,20 @@ export default (o => {
     return defval;
   };
 
+  o.date = (val, defval) => {
+    if (val instanceof Date )
+      defval = val;
+    else if (typeof val === 'number')
+      defval = new Date( val );
+    else if (typeof val === 'string') {
+      if (!Number.isNaN(Number.parseFloat(val)) && Number.isFinite(+val))
+        defval = new Date( +val );
+      else if (!Number.isNaN(val = Date.parse(val)))
+        defval = new Date(val);
+    }
+
+    return defval;
+  };
   
   o.boolean = o.bool;
   o.number = o.num;
