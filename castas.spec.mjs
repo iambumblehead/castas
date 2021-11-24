@@ -71,4 +71,24 @@ test("castas.ts should return `1470076935364` from `'1470076935364'`", t => {
 
 test("castas.ts should return `1470076935364` from `new Date(1470076935364)`", t => {
   t.is(castas.ts(new Date(1470076935364)), 1470076935364);
-});    
+});
+
+test("castas.date should return `new Date( 0 )` from `'0'`", t => {
+  t.is(castas.date( 0 ).getTime(), new Date( 0 ).getTime());
+});
+
+test("castas.date should return `new Date( 1470076935364 )` from `'1470076935364'`", t => {
+  t.is(castas.date( 1470076935364 ).getTime(), new Date( 1470076935364 ).getTime());
+});
+
+test("castas.date should return `new Date( 1470076935364 )` from `new Date( 1470076935364 )`", t => {
+  t.is(castas.date( new Date( 1470076935364 ) ).getTime(), new Date( 1470076935364 ).getTime());
+});
+
+test("castas.date should return `new Date( 1470076935364 )` from `'2016-08-01T18:42:15.364Z'`", t => {
+  t.is(castas.date('2016-08-01T18:42:15.364Z').getTime(), new Date( 1470076935364 ).getTime() );
+});
+
+test("castas.date should return default date if given val is not date", t => {
+  t.is(castas.date('', new Date( 1470076935364 )).getTime(), new Date( 1470076935364 ).getTime() );
+});
