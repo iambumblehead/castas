@@ -3,11 +3,15 @@
   "main": "castas.js",
   "browser": "castas.js",
   "module": "castas.mjs",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "return values of changed type, mostly for parsing stringy command-line and url-encoded values to primitive equivalents.",
   "author": "Chris <chris@bumblehead.com>",
   "license": "MIT",
   "readmeFilename": "README.md",
+  "files": [
+    "castas.js",
+    "castas.mjs"
+  ],
   "exports": {
     ".": {
       "require": "./castas.js",
