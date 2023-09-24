@@ -32,7 +32,7 @@ castas.str('', '5');   // ''
 
 [0]: http://www.bumblehead.com                            "bumblehead"
 
-![scrounge](https://github.com/iambumblehead/scroungejs/raw/master/img/hand.png)
+![scrounge](https://github.com/iambumblehead/scroungejs/raw/main/img/hand.png)
 
 (The MIT License)
 
