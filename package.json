@@ -3,7 +3,7 @@
   "main": "castas.js",
   "browser": "castas.js",
   "module": "castas.mjs",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "return values of changed type, mostly for parsing stringy command-line and url-encoded values to primitive equivalents.",
   "author": "Chris <chris@bumblehead.com>",
   "license": "MIT",
@@ -20,21 +20,18 @@
     "./": "./"
   },
   "scripts": {
-    "test": "ava castas.spec.mjs",
+    "test": "node --test castas.spec.mjs",
     "start": "cp castas.mjs castas.js && sed -i 's/export default/module.exports =/' castas.js",
     "prepare": "npm start && npm test"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/iambumblehead/castas.git"
+    "url": "git+https://github.com/iambumblehead/castas.git"
   },
   "keywords": [
     "type",
     "type cast",
     "casting",
     "cast"
-  ],
-  "devDependencies": {
-    "ava": "^3.15.0"
-  }
+  ]
 }

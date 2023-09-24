@@ -1,8 +1,3 @@
-// Filename: castas.js  
-// Timestamp: 2017.04.23-14:09:16 (last modified)
-// Author(s): bumblehead <chris@bumblehead.com>
-
-// module.exports = (o => {
 export default (o => {
   o.bool = (val, defval) => {
     if (String(val) === 'true')
@@ -72,5 +67,4 @@ export default (o => {
   ));
 
   return o;
-  
 })({});
